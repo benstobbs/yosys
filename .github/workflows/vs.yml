@@ -36,11 +36,9 @@ jobs:
         working-directory: yosys-win32-vcxsrc-latest
         run: |
           msbuild YosysVS.sln /p:PlatformToolset=v142 /p:Configuration=Release /p:WindowsTargetPlatformVersion=10.0.17763.0
-          ls
-          tree .
       - uses: actions/upload-artifact@v2
-        name: Upload Release Directory
+        name: Upload Release
         with:
-          name: project-folder
-          path: ./
+          name: yosys.exe
+          path: ./yosys-win32-vcxsrc-latest/Release/YosysVS.exe
 
