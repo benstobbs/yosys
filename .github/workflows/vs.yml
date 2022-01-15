@@ -41,6 +41,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         name: Upload Release Directory
         with:
-          name: release-folder
-          path: Release/
+          name: project-folder
+          path: ./
 
