@@ -37,9 +37,10 @@ jobs:
         run: |
           msbuild YosysVS.sln /p:PlatformToolset=v142 /p:Configuration=Release /p:WindowsTargetPlatformVersion=10.0.17763.0
           ls
+          tree .
       - uses: actions/upload-artifact@v2
         name: Upload Release Directory
         with:
-          name: Release
-          path: Release
+          name: release-folder
+          path: Release/
 
