@@ -1,7 +1,7 @@
 name: Build and run tests (macOS)
 
 # on: [push, pull_request]
-on: workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   test-macos:
